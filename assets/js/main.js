@@ -138,7 +138,8 @@
   if (skilsContent) {
     new Waypoint({
       element: skilsContent,
-      offset: '1%',
+      offset: '0%',
+      continuous: true,
       handler: function(direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
