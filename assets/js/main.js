@@ -134,14 +134,15 @@
   /**
    * Skills animation
    */
-// Animate the progress bars on page load
-window.addEventListener("load", function() {
-  const progressBars = document.querySelectorAll(".progress-bar");
-  progressBars.forEach(function(bar) {
-    const percentage = bar.getAttribute("aria-valuenow");
-    bar.style.width = percentage + "%";
+  // Animate the progress bars on page load
+  window.addEventListener("load", function() {
+    const progressBars = document.querySelectorAll(".progress-bar");
+    progressBars.forEach(function(bar) {
+      const percentage = bar.getAttribute("aria-valuenow");
+      bar.style.width = percentage + "%";
+      bar.textContent = bar.parentElement.previousElementSibling.textContent;
+    });
   });
-});
 
   /**
    * Testimonials slider
