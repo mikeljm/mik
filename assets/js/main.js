@@ -134,19 +134,14 @@
   /**
    * Skills animation
    */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute('data-percentage') + '%'
-        });
-      }
-    })
-  }
+// Animate the progress bars on page load
+window.addEventListener("load", function() {
+  const progressBars = document.querySelectorAll(".progress-bar");
+  progressBars.forEach(function(bar) {
+    const percentage = bar.getAttribute("aria-valuenow");
+    bar.style.width = percentage + "%";
+  });
+});
 
   /**
    * Testimonials slider
