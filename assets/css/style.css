@@ -427,7 +427,7 @@ section .container {
   background: rgba(255, 255, 255, 0.2);
 }
 .skills .progress-bar {
-  width: 1px;
+  width: 1%;
   height: 10px;
   transition: 0.9s;
   background-color: #18d26e;
