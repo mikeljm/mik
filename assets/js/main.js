@@ -138,7 +138,7 @@
   if (skilsContent) {
     new Waypoint({
       element: skilsContent,
-      offset: '80%',
+      offset: '10%',
       handler: function(direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
@@ -147,13 +147,7 @@
       }
     })
   }
-  
-  const progressBars = document.querySelectorAll('.progress-bar');
 
-  progressBars.forEach(bar => {
-    const progress = bar.getAttribute('aria-valuenow');
-    bar.style.width = `${progress}%`;
-  });
 
 
   /**
