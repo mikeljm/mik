@@ -427,10 +427,14 @@ section .container {
   background: rgba(255, 255, 255, 0.2);
 }
 .skills .progress-bar {
-  width: 1%;
+  width: 1px;
   height: 10px;
   transition: 0.9s;
   background-color: #18d26e;
+}
+.skill.progress-bar::before {
+  content: attr(data-percentage) '%';
+  width: attr(data-percentage);
 }
 
 /*--------------------------------------------------------------
