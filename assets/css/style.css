@@ -422,6 +422,10 @@ section .container {
   background-color: #4caf50;
   width: 0%;
   transition: width 0.5s;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
 }
 
 /* Style the skills and proficiency levels */
