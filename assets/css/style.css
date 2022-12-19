@@ -407,41 +407,33 @@ section .container {
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 
-/* Style the progress bars */
-.progress-bar-wrap {
-  width: 100%;
-  height: 20px;
-  background-color: #ddd;
-  border-radius: 5px;
-  overflow: hidden;
-  position: relative;
-}
-
-.progress-bar {
-  height: 100%;
-  background-color: #4caf50;
-  width: 0%;
-  transition: width 0.5s;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  line-height: 20px;
-}
-
-/* Style the skills and proficiency levels */
-.skill {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
+.skills .progress {
+  height: 60px;
   display: block;
-  margin-bottom: 8px;
+  background: none;
+  border-radius: 0;
 }
-
-.val {
-  font-size: 14px;
-  font-weight: normal;
-  color: #777;
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.skills .progress .skill .val {
   float: right;
+  font-style: normal;
+}
+.skills .progress-bar-wrap {
+  background: rgba(255, 255, 255, 0.2);
+}
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #18d26e;
 }
 
 
