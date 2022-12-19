@@ -432,7 +432,7 @@ section .container {
   transition: 0.9s;
   background-color: #18d26e;
 }
-.skill.progress-bar::before {
+.progress-bar::before {
   content: attr(data-percentage) '%';
   width: attr(data-percentage);
 }
